@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block Page_Header %}
+    节点管理
+{% endblock %}
+{% block content %}
+    <div class="box-body">
+        <table id="example2" class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>节点名</th>
+                <th>节点IP</th>
+                <th>操作系统</th>
+                <th>监听端口</th>
+                <th>CPU</th>
+                <th>内存数</th>
+                <th>镜像数</th>
+                <th>状态</th>
+                <th>节点组</th>
+                <th>容器数</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>{{ name_host }}</td>
+                <td>192.168.1.5</td>
+                <td>{{ os_host }}</td>
+                <td>23575</td>
+                <td>{{ num_cpu }}</td>
+                <td>{{ mem_host }}</td>
+                <td>{{ num_imgs }}</td>
+                <td>{{ num_imgs }}</td>
+                <td>{{ num_imgs }}</td>
+                <td>{{ num_containers }}</td>
+
+            </tr>
+            </tbody>
+
+        </table>
+    </div>
+{% endblock %}
